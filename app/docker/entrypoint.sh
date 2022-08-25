@@ -5,7 +5,7 @@
 TRY_LOOP="20"
 
 : "${POSTGRES_HOST:="postgres"}"
-: "${POSTGRES_PORT:="5433"}"
+: "${POSTGRES_PORT:="5432"}"
 
 wait_for_port() {
   local name="$1" host="$2" port="$3"
