@@ -9,8 +9,8 @@ from api.routes.jobs import router as jobs_router
 serviceApiPrefix = "/jobs/api/v1"
 
 app = FastAPI(
-    title="iaps Jobs Endpoint",
-    descriptions="iaps API Jobs -  validate and trigger new jobs",
+    title="Arbocensus Jobs Endpoint",
+    descriptions="Arbocensus API Jobs -  validate and trigger new jobs",
     version="3.0.0",
     openapi_url=f"{serviceApiPrefix}/openapi.json",
     docs_url=f"{serviceApiPrefix}/docs",

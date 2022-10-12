@@ -24,6 +24,8 @@ wait_for_port() {
 echo "$POSTGRES_HOST" "$POSTGRES_PORT"
 wait_for_port "Postgres" "$POSTGRES_HOST" "$POSTGRES_PORT"
 
-echo "starting refy api"
+echo "starting arbocensus api"
+
+alembic upgrade head
 
 uvicorn main:app --port=$SERVICE_PORT --host=0.0.0.0

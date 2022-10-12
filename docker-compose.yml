@@ -5,7 +5,7 @@ services:
     build:
       context: app
       dockerfile: ./docker/Dockerfile
-    image: iaps/iaps-jobs-api
+    image: arbocensus/arbocensus-jobs-api
     env_file:
       - ./app/docker/.env
     ports:

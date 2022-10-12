@@ -6,7 +6,7 @@ load_dotenv(verbose=True)
 
 
 class CommonSettings(BaseSettings):
-    APP_NAME: str = "iaps JOBS API"
+    APP_NAME: str = "Arbocensus JOBS API"
     DEBUG_MODE: bool = os.getenv('DEBUG_MODE')
 
 
